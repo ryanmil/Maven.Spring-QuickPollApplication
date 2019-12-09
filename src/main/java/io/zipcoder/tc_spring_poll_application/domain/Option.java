@@ -13,7 +13,8 @@ public class Option {
     @Column(name = "OPTION_ID")
     private Long id;
 
-    private String option;
+    @Column(name = "OPTION_VALUE")
+    private String value;
 
     public Long getId() {
         return id;
@@ -23,11 +24,11 @@ public class Option {
         this.id = id;
     }
 
-    public String getOption() {
-        return option;
+    public String getValue() {
+        return value;
     }
 
-    public void setOption(String option) {
-        this.option = option;
+    public void setValue(String option) {
+        this.value = option;
     }
 }
